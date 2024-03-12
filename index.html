@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+  <title>Library Mangement</title>
+  <script src="https://kit.fontawesome.com/9494ea9dfd.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <div class="main">
+    <div class="addbook">
+      <h2>Add Book</h2>
+      <label>Add book id:</label><br>
+      <input type="text" id="book_id" placeholder="Book Id">
+      <br>
+      <label>Add book title:</label><br>
+      <input type="text" id="book_title" placeholder="Book Title">
+      <br>
+      <label>Add Author name:</label><br>
+      <input type="text" id="book_author" placeholder="Book Author">
+      <br>
+      <button style="height: 27px;" id="add_book">Add Book</button>
+      <h2>Update Book</h2>
+      <label>Book ID to Update:</label><br>
+      <input type="text" id="update_book_id" placeholder="Book ID">
+      <br>
+      <label>New book title:</label><br>
+      <input type="text" id="new_book_title" placeholder="New book title">
+      <br>
+      <label>New book author:</label><br>
+      <input type="text" id="new_book_author" placeholder="New book author">
+      <br>
+      <button style="height: 27px;" id="update-book">Update Book</button>
+    </div>
+
+    <div id="search">
+      <h2>Search Book</h2>
+      <input type="text" id="searchbook" placeholder="Search book title"><br>
+      <button id="search_book">Search</button>
+      <div>
+        <h2>Search Result</h2>
+        <ul id="book_result"></ul>
+      </div>
+    </div>
+    <div class="booklist">
+      <h2>Book List</h2>
+      <ul id="book_list"></ul>
+    </div>
+
+  </div>
+  <script type="module" src="index.js"></script>
+</body>
+
+</html>
